@@ -20,9 +20,9 @@ namespace SSSCalApp.Core.ApplicationService
         ICollection<coreevent.Event> GetCalculatedEventsByDateRange(DateTime startDate, DateTime endDate);
         int Count();
         //Update //PUT
-        //Person UpdatePerson(Person pUpdate);
+        coreevent.Event UpdateEvent(coreevent.Event evt);
         
         //Delete //DELETE
-        //bool DeleteCustomer(int id);
+        bool DeleteEvent(int id);
     }
 }

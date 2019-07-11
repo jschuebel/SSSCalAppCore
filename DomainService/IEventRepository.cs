@@ -14,7 +14,7 @@ namespace SSSCalApp.Core.DomainService
         List<coreevent.Person> GetEventByIdWithPeople(int id);
         IEnumerable<coreevent.Event> ReadAll();
         //Update Data
-        coreevent.Event Update(coreevent.Event address);
+        coreevent.Event Update(coreevent.Event evt);
         //Delete Data
         bool Delete(int id);
         int Count();

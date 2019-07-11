@@ -19,9 +19,9 @@ namespace SSSCalApp.Core.ApplicationService
         IEnumerable<Person> GetAllPersons();//Filter filter);
         int Count();
         //Update //PUT
-        //Person UpdatePerson(Person pUpdate);
+        Person UpdatePerson(Person pUpdate);
         
         //Delete //DELETE
-        //bool DeleteCustomer(int id);
+        bool DeletePerson(int id);
     }
 }

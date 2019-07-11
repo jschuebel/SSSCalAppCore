@@ -32,15 +32,26 @@ namespace SSSCalApp.Core.ApplicationService.Services
             return _personRepo.Create(cust);
         }
 
+        public Person UpdatePerson(Person cust)
+        {
+            return _personRepo.Update(cust);
+        }
+
         public Person FindPersonById(int id)
         {
-            return _personRepo.ReadyById(id);
+            return _personRepo.GetById(id);
         }
 
        public IEnumerable<Person> GetAllPersons()
         {
             return _personRepo.ReadAll();
         }
+        public bool DeletePerson(int id)
+        {
+            return _personRepo.Delete(id);
+        }
+
+        
      public int Count()
         {
             return _personRepo.Count();
