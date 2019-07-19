@@ -93,7 +93,7 @@ namespace SSSCalApp.Core.ApplicationService.Services
                 if ((hldStDate.Month==2 || hldStDate.Month== 3 || hldStDate.Month == 4) && hldStDate.Month==estr.Month) {
                 //console.log("*********** Easter="+ estr);
                     lstEvents.Add(new coreevent.Event {
-                        topic = "Holy Day",
+                        Topic = "Holy Day",
                         topicf = new coreevent.Topic() { TopicTitle="Holy Day" },
                         Description = "Easter",
                         Date = estr
@@ -104,7 +104,7 @@ namespace SSSCalApp.Core.ApplicationService.Services
                 if (hldStDate.Month==ashWednesday.Month){
                     //console.log("*********** ashWednesday="+ ashWednesday);
                     lstEvents.Add(new coreevent.Event {
-                        topic = "Holy Day" ,
+                        Topic = "Holy Day" ,
                         topicf = new coreevent.Topic() { TopicTitle="Holy Day" },
                         Description = "Ash Wednesday",
                         Date = ashWednesday
@@ -123,7 +123,7 @@ namespace SSSCalApp.Core.ApplicationService.Services
                     dtm=dtm.AddDays(daystilSun+14);          
                     //console.log("*********** presday="+ dtm);
                     lstEvents.Add(new coreevent.Event {
-                        topic = "Observed Holiday" ,
+                        Topic = "Observed Holiday" ,
                         topicf = new coreevent.Topic() { TopicTitle="Observed Holiday" },
                         Description = "Presidents Day",
                         Date = dtm
@@ -141,7 +141,7 @@ namespace SSSCalApp.Core.ApplicationService.Services
                     dtm = dtm.AddDays(daystilSun+7);            
                     //console.log("*********** Daylight Saving Time Spring Forward="+ dtm);
                     lstEvents.Add(new coreevent.Event {
-                        topic = "Clock Change",
+                        Topic = "Clock Change",
                         topicf = new coreevent.Topic() { TopicTitle="Clock Change" },
                         Description = "Daylight Saving Time Spring Forward",
                         Date = dtm
@@ -161,7 +161,7 @@ namespace SSSCalApp.Core.ApplicationService.Services
 
                     //console.log("*********** Mothers Day="+ dtm);
                     lstEvents.Add(new coreevent.Event {
-                        topic = "Special Day" ,
+                        Topic = "Special Day" ,
                         topicf = new coreevent.Topic() { TopicTitle="Special Day" },
                         Description = "Mothers Day",
                         Date = dtm
@@ -178,7 +178,7 @@ namespace SSSCalApp.Core.ApplicationService.Services
                     }
                     //console.log("*********** Memorial Day="+ dtm2);
                     lstEvents.Add(new coreevent.Event {
-                        topic = "Observed Holiday" ,
+                        Topic = "Observed Holiday" ,
                         topicf = new coreevent.Topic() { TopicTitle="Observed Holiday" },
                         Description = "Memorial Day",
                         Date = dtm2
@@ -196,7 +196,7 @@ namespace SSSCalApp.Core.ApplicationService.Services
                     dtm = dtm.AddDays(daystilSun+14);
                     //console.log("*********** Father's Day="+ dtm);
                     lstEvents.Add(new coreevent.Event {
-                        topic = "Special Day" ,
+                        Topic = "Special Day" ,
                         topicf = new coreevent.Topic() { TopicTitle="Special Day" },
                         Description = "Father's Day",
                         Date = dtm
@@ -216,7 +216,7 @@ namespace SSSCalApp.Core.ApplicationService.Services
                     dtm = dtm.AddDays(daystilSun);
                     //console.log("*********** Labor Day="+ dtm);
                     lstEvents.Add(new coreevent.Event {
-                        topic = "Observed Holiday",
+                        Topic = "Observed Holiday",
                         topicf = new coreevent.Topic() { TopicTitle="Observed Holiday" },
                         Description = "Labor Day",
                         Date = dtm
@@ -236,7 +236,7 @@ namespace SSSCalApp.Core.ApplicationService.Services
                     dtm = dtm.AddDays(daystilSun+7);
                     //console.log("*********** Columbus Day="+ dtm);
                     lstEvents.Add(new coreevent.Event {
-                        topic = "Observed Holiday",
+                        Topic = "Observed Holiday",
                         topicf = new coreevent.Topic() { TopicTitle="Observed Holiday" },
                         Description = "Columbus Day",
                         Date = dtm
@@ -255,7 +255,7 @@ namespace SSSCalApp.Core.ApplicationService.Services
                     dtm = dtm.AddDays(daystilSun);
                     //console.log("*********** Daylight Savings Fall Back="+ dtm);
                     lstEvents.Add(new coreevent.Event {
-                        topic = "Clock Change" ,
+                        Topic = "Clock Change" ,
                         topicf = new coreevent.Topic() { TopicTitle="Clock Change" },
                         Description = "Daylight Savings Fall Back",
                         Date = dtm
@@ -270,7 +270,7 @@ namespace SSSCalApp.Core.ApplicationService.Services
                         dtm2 = dtm2.AddDays(-(dofw+3));
                     //console.log("*********** ThanksGiving="+ dtm2);
                     lstEvents.Add(new coreevent.Event {
-                        topic = "Observed Holiday" ,
+                        Topic = "Observed Holiday" ,
                         topicf = new coreevent.Topic() { TopicTitle="Observed Holiday" },
                         Description = "ThanksGiving",
                         Date = dtm2
